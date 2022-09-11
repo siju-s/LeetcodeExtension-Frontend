@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+<div class="form">
+    <div class="home" id="home">
+        <h1>Leetcode Profile</h1>
+        <h2 class="form-title" id="signup">Log In</h2>
+        <p class="invalidCreds" id="invalidCreds"></p>
+        <div class="form-holder">
+            <input type="text" class="input" id="leetcodeId" name="leetcodeId" placeholder="Enter Leetcode id"/>
+        </div>
+        <button class="submit-btn" id="submit-btn-login">Log in</button>
+    </div>
+    <div class="login slide-up" id="loginDiv" style="visibility:hidden">
+        <div class="center">
+            <!--      <h6 id="login" style=" font-size:small; text-align:center; cursor: pointer; margin-top: -5%;" >Not <span id="username">You </span>?</h6>-->
+
+            <div id="profile">
+                <h3>Leetcode Profile</h3>
+                <div class="profile-container">
+                    <img src="images/get_started16.png" id="avatar"/>
+                    <div class="username" id="username"></div>
+                    <p class="username" id="rank"></p>
+                    <p class="username" id="views"></p>
+                </div>
+                <div class="leetcodeStats card" id="leetcodeStats">
+                    <div class="difficulty-label total" id="total"></div>
+                    <div class="solved-container">
+
+                        <div class="difficulty-label easy-wrapper">
+                            <h3>Easy</h3>
+                            <div class=" easy" id="easy"></div>
+                        </div>
+                        <div class="difficulty-label medium-wrapper">
+                            <h3>Medium</h3>
+                            <div class="difficulty-label medium" id="medium"></div>
+                        </div>
+                        <div class="difficulty-label hard-wrapper">
+                            <h3>Hard</h3>
+                            <div class="difficulty-label hard" id="hard"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="stats"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="loader" style="visibility:hidden">
+    <div class="loading1"></div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
