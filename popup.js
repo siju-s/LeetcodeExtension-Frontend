@@ -83,11 +83,7 @@ loginBtn.addEventListener('click', (e) => {
     fetch(url)
         .then(response => response.text())
         .then(data => {
-            console.log(JSON.parse(data))
-            // chrome.storage.sync.get('username', ({ name }) => {
-            //   console.log('name: ', name)
-            //   document.getElementById('username').innerHTML = name;
-            // });
+            console.log(data)
             if (leetcodeId.length <= 0 || data === 'Username does not exist') {
                 document.getElementsByClassName("loader")[0].style.display = "none";
                 document.getElementById("invalidCreds").innerHTML = 'Invalid LeetCode Id';
@@ -95,9 +91,8 @@ loginBtn.addEventListener('click', (e) => {
             } else {
                 displayProfileData(JSON.parse(data))
                 fetchQuestionsSolved(url)
-                //document.getElementById("stats").innerHTML = data;
-                // signupDiv.classList.add("slide-up");
                 loginDiv.classList.remove("slide-up");
+                loginBtn.style.visibility = "hidden";
                 document.getElementById("loginDiv").style.visibility = "visible";
                 document.getElementById("home").style.visibility = "hidden";
                 document.getElementsByClassName("loader")[0].style.display = "none";

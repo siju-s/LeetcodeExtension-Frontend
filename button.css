@@ -19,9 +19,20 @@ button.current {
   color: rgba(0, 0, 0, 0.4);
 }
 
+.form .home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  width: 65%;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease;
+}
+
 .form {
   min-width:300px;
   min-height: 400px;
+  background-color: #555555;
 }
 
 .form .login {
@@ -30,7 +41,7 @@ button.current {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  color: #FFFFFF;
   z-index: 5;
   -webkit-transition: all 0.3s ease;
 }
@@ -90,7 +101,7 @@ button.current {
 }
 
 .form .profile-container {
-  display: inherit;
+  display: table-caption;
 }
 
 .form .username {
@@ -112,6 +123,11 @@ button {
   transition: 0.5s;
 }
 
+.loader {
+  background-color: #555555;
+
+}
+
 .loading {
   border: 5px solid #ccc;
   width: 60px;
@@ -122,29 +138,12 @@ button {
   animation: spin 1s infinite ease-in;
 }
 
-.loader1 {
-  display: none;
-  top: 75%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.loading1 {
-  border: 5px solid #ccc;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border-top-color: #265766;
-  border-left-color: #265766;
-  animation: spin 1s infinite ease-in;
-}
 
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  background-color: #555555;
+  background-color: #4F4A48;
   border-radius: 7px;
   min-height: 50px;
   height: 100px;
@@ -205,4 +204,16 @@ button {
 
 .hard {
   color: #E91E63;
+}
+
+h3 {
+  color: #FFFFFF;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #555555;
 }
